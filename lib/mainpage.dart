@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 curve: Curves.easeInOut,
                 decoration: BoxDecoration(
                   color: index == _selectedGridIndex
-                      ? Colors.lightBlue
+                      ? Colors.cyan[100]
                       : Colors.grey[300],
                   borderRadius: const BorderRadius.all(Radius.circular(10.0)),
                 ),
@@ -129,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: Icon(Icons.settings), label: 'Settings'),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.lightBlue,
+        selectedItemColor: Colors.cyan[100],
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         onTap: onTapped,
